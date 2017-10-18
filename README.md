@@ -1,0 +1,2 @@
+# flaskgal
+Simple template rendering.
