@@ -2,17 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Gallery</title>
-
-    {% assets "scss_all" %}
-        <link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
-    {% endassets %}
+	<meta charset="UTF-8">
+	<title>Gallery</title>
+	{% assets "scss_all" %}
+		<link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
+	{% endassets %}
 </head>
 
 <body>
-{% block header %}{% endblock %}
-{% block content %}{% endblock %}
-{% block footer %}{% endblock %}
+	<div class="container">
+		<header class="header">
+		    <h2>Gallery</h2>
+		</header>
+		{% block content %}{% endblock %}
+		<footer class="footer">
+			<h2>Footer</h2>
+		</footer>
+	</div>
 </body>
+
 </html>
