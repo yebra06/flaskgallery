@@ -29,6 +29,7 @@ def index():
     if request.method == 'GET':
         return render_template('index.html', urls=img_urls or [])
     return render_template('404.html')
+
 if __name__ == '__main__':
     img_urls = []
     app.run()
