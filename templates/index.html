@@ -3,7 +3,11 @@
 {% block content %}
 	<div class="index">
 		{% for image in urls %}
-			<img clss="gallery-image" src="{{image}}" />
+			<div class="image-wrapper">
+				<div class="image">
+					<img clss="gallery-image" src="{{image}}" width="200" height="200"/>
+				</div>
+			</div>
 		{% endfor %}
 	</div>
 {% endblock %}

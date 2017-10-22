@@ -27,7 +27,7 @@ def index():
                     if link.get('src'):
                         img_urls.append(link.get('src'))
     if request.method == 'GET':
-        return render_template('index.html', urls=img_urls or [])
+        return render_template('index.html', urls=img_urls)
     return render_template('404.html')
 
 if __name__ == '__main__':
