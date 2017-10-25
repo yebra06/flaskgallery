@@ -20,6 +20,11 @@ body {
   box-sizing: inherit;
 }
 
+.main-header {
+    font-size: 60px;
+    color: darkblue;
+}
+
 .container {
   display: -webkit-box;
   display: -moz-box;
@@ -42,5 +47,9 @@ body {
         padding: 0 6px;
         float: left;
         width: 33.33%;
+    }
+    .gallery-image {
+        height: auto;
+        width: 100%;
     }
 }

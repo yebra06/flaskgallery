@@ -4,6 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gallery</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}"/>
+
 	{% assets "scss_all" %}
 		<link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
 	{% endassets %}
@@ -12,7 +14,7 @@
 <body>
 	<div class="container">
 		<header class="header">
-		    <h2>Gallery</h2>
+		    <h2 class="main-header">Gallery</h2>
 		</header>
 		{% block content %}{% endblock %}
 		<footer class="footer">
